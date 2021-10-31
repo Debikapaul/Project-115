@@ -25,7 +25,7 @@ function modelLoaded(){
     console.log("Posenet is Initialised");
 }
 
-function gotPoses(){
+function gotPoses(results){
     if(results.length > 0 ){
         console.log(results);
         console.log("lip x="+ results[0].pose.lip.x);
