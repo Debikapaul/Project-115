@@ -1,3 +1,6 @@
+lipX=0;
+lipY=0;
+
 function preload(){
 
 }
@@ -27,8 +30,8 @@ function modelLoaded(){
 
 function gotPoses(results){
     if(results.length > 0 ){
-        console.log(results);
-        console.log("lip x="+ results[0].pose.lip.x);
-        console.log("lip y="+ results[0].pose.lip.y);
+      console.log(results);
+      lipX=console.log("lip x="+ results[0].pose.lip.x);
+      lipY=console.log("lip y="+ results[0].pose.lip.y);
     }
 }
