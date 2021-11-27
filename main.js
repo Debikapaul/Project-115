@@ -31,9 +31,9 @@ function modelLoaded(){
 function gotPoses(results){
     if(results.length > 0 ){
       console.log(results);
-      lipX=results[0].pose.nose.x+15;
+      lipX=results[0].pose.nose.x-25;
       lipY=results[0].pose.nose.y+15;
-      lipX=console.log("lip x="+ results[0].pose.nose.x);
-      lipY=console.log("lip y="+ results[0].pose.nose.y);
+      console.log("lip x="+ lipX);
+      console.log("lip y ="+lipY); 
     }
 }
